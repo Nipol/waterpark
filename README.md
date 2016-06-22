@@ -6,6 +6,7 @@ Waterpark
 TODO
 ----
 
-[ ] http/2
-[ ] TLS 1.4
-[ ] Web UI
+ - [x] 시작이 반
+ - [ ] http/2
+ - [ ] TLS 1.4
+ - [ ] Web UI
