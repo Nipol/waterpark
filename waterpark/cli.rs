@@ -2,16 +2,16 @@ pub const USAGE: &'static str = "
 Waterpark File share platform.
 
 Usage:
-  waterpark init [options]
-  waterpark config <path> [options]
-
-Options
-  --blahblah      blahblah
-  --blahblah2     blahblah2
+  waterpark
+  waterpark init
+  waterpark config <path>
+  waterpark help
 ";
 
 #[derive(Debug, RustcDecodable)]
 pub struct Args {
   pub cmd_init: bool,
+  pub cmd_config: bool,
+  pub cmd_help: bool,
   pub arg_path: Vec<String>,
 }
