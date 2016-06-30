@@ -5,6 +5,7 @@ extern crate rustc_serialize;
 mod cli;
 mod configuration;
 
+use cli::show_version;
 use configuration::Configuration;
 
 fn main() {
@@ -13,5 +14,7 @@ fn main() {
 }
 
 fn excute(conf: Configuration) {
-  println!("conf Success!");
+  if conf.args.cmd_version {
+    show_version();
+  }
 }
